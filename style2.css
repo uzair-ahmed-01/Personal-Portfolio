@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .hero {
+    width: 100vw;
+    height: 100vh;
+    background: #eff4fd;
+  }
+  
+  nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 1.5vmax 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1vmax;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1vmax;
+  }
+  
+  #hr:hover {
+    color: rgba(67, 104, 235, 0.927);
+  }
+  
+  nav ul li a:hover {
+    color: #ffa500;
+  }
+  
+  .details {
+    width: 35vmax;
+    margin-left: 8%;
+    margin-top: 10%;
+  }
+  
+  .details h1 {
+    font-size: 4vmax;
+    color: #212121;
+    margin-bottom: 1.5vmax;
+  }
+  
+  span {
+    color: #ffa500;
+  }
+  
+  .details p {
+    color: #555;
+    line-height: 3.5vh;
+  }
+  
+  .details a {
+    background: #212121;
+    padding: 1vmax 1.8vmax;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 2vmax 0;
+    border-radius: 0.5em;
+    font-size: 1em;
+  }
+  
+  .details a:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .details a {
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
+    
+    .details {
+      position: absolute;
+      bottom: 100px;
+
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .details a {
+      padding: 8px 16px;
+      font-size: 0.8em;
+    }
+  }
+  
+  .images {
+    width: 40vw;
+    height: 80vh;
+    position: absolute;
+    bottom: 100px;
+    right: 1vw;
+    transform: translateY(1vmax);
+  }
+  
+  .images img {
+    height: 70vh;
+    position: absolute;
+    bottom: 0;
+   
+  }
+
+
+  /* .images:hover .shape {
+    bottom: 30px;
+  }
+
+  .images:hover .boy {
+    left: 40%;
+  } */
+  
+  /* Floating Animation */
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .boy {
+    animation: floating 3s ease-in-out infinite;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .images {
+      width: 80vw;
+      height: 60vh;
+      right: 10vw;
+      top: 0;
+      margin-top: 50px;
+    }
+  
+    .images img {
+      height: 50vh;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .images {
+    width: 90vw;
+    height: 40vh;
+    right: 5vw;
+    }
+    
+    .images img {
+    height: 30vh;
+    }
+    }
+    
+    .social {
+    margin-left: 8%;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    }
+    
+    .social a {
+    font-size: 2em;
+    color: #212121;
+    margin: 0.5vmax;
+    }
+    
+    .social a:hover {
+    color: orange;
+    }
